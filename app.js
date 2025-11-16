@@ -225,9 +225,6 @@ function getProjectTemplateItem() {
                 </div>
             </div>
             <div class="flex justify-between items-center">
-                <div class="text-sm text-neutral-500">
-                    <span class="project-status">待设置</span>
-                </div>
                 <div class="flex gap-2">
                     <select class="project-category py-1 px-2 border border-neutral-200 rounded input-focus text-sm">
                         <option value="股票">股票</option>
@@ -758,20 +755,7 @@ function updateProjectData(projectId) {
         project.category = categorySelect.value;
         project.color = selectedColor?.dataset.color || project.color;
         
-        // 更新状态显示
-        if (projectName && amount > 0) {
-            statusElement.textContent = '已配置';
-            statusElement.className = 'project-status text-success';
-        } else if (!projectName) {
-            statusElement.textContent = '请输入项目名称';
-            statusElement.className = 'project-status text-warning';
-        } else if (amount <= 0) {
-            statusElement.textContent = '请设置金额';
-            statusElement.className = 'project-status text-warning';
-        } else {
-            statusElement.textContent = '待设置';
-            statusElement.className = 'project-status text-neutral-500';
-        }
+        // 状态显示已删除
         
         updateSummaryDisplay();
         updateCharts();
