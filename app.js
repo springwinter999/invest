@@ -21,11 +21,10 @@ let templatesLoaded = false;
 
 // 默认仓位配置
 const defaultPortfolio = [
-    { name: '纳斯达克100', percentage: 45, category: '基金', color: '#165DFF' },
-    { name: '标普500', percentage: 20, category: '基金', color: '#00B42A' },
-    { name: '中证500', percentage: 15, category: '基金', color: '#FF7D00' },
-    { name: '信用债券', percentage: 10, category: '债券', color: '#722ED1' },
-    { name: 'MSCI', percentage: 10, category: '基金', color: '#F759AB' }
+    { name: '纳斯达克100', percentage: 50, category: '基金', color: '#165DFF' },
+    { name: '红利低波', percentage: 30, category: '基金', color: '#00B42A' },
+    { name: '标普500', percentage: 10, category: '基金', color: '#FF7D00' },
+    { name: '黄金', percentage: 10, category: '贵金属', color: '#F759AB' }
 ];
 
 // 图表对象
